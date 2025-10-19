@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+  background-color:rgb(250, 230, 192);
+  color: #333;
+  padding: 20px;
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* === Section Titles === */
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #1e0565;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff9933;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* === Flex Container for Cards === */
+section > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* === Individual Cards === */
+.heritage-india,
+.nature-india,
+.spiritual-india,
+.outdoor-india {
+  background-color: white;
+  border: 5px solid #011739;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Flex layout */
+  flex: 1 1 calc(25% - 18px);  /* 4 per row with gap */
+  max-width: calc(25% - 18px);
+}
+
+/* Hover Effects */
+.heritage-india:hover,
+.nature-india:hover,
+.spiritual-india:hover,
+.outdoor-india:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+/* === Headings and Paragraphs inside Cards === */
+article h3 {
+  font-size: 1.2rem;
+  color: #1a237e;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+article p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* === Responsive Layout === */
+
+/* Tablets: 2 cards per row */
+@media (max-width: 900px) {
+  .heritage-india,
+  .nature-india,
+  .spiritual-india,
+  .outdoor-india {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+}
+
+/* Phones: 1 card per row */
+@media (max-width: 600px) {
+  .heritage-india,
+  .nature-india,
+  .spiritual-india,
+  .outdoor-india {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

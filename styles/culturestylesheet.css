@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+  background-color:rgb(250, 230, 192);
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffd500; 
+  padding: 0 1rem;
+  max-width: 100%;
+  z-index: 2;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+ /* Logo and Navigation Wrapper */
+.logo-nav {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-wrap: wrap;
+}
+
+/* logo */
+
+.logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(2px 4px 6px rgb(236, 233, 233));
+  }
+
+.menu-toggle {
+  display: none;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index:10;
+  position:absolute;
+  margin-left: 100%;
+  margin-right:auto;
+}
+
+/* Default mobile styles (0–599px) */
+@media (max-width: 599px) {
+  .navigation ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .navigation.open ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .banner .hero-text {
+    position:relative;
+    padding: 0.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text blockquote {
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Main container */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Section layout using CSS Grid */
+.main-nav-contents-culture {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  padding: 10px;
+}
+
+/* Culture card */
+.culture {
+  background-color:white;
+  border-top: 15px solid #ef7d0b;
+  border-bottom: 15px solid green;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height:350px;
+}
+
+.culture:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+.culture h4 {
+  color: #1a237e;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Paragraphs */
+.culture p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Responsive layout: 2 columns on tablets *//* Tablets (under 900px): 2 columns, reduce size */
+@media (max-width: 900px) {
+  .main-nav-contents-culture {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .culture {
+    padding: 16px;
+  }
+
+  .culture h4 {
+    font-size: 1.05rem;
+  }
+
+  .culture p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Phones (under 600px): 1 column, minimal padding */
+@media (max-width: 600px) {
+  .main-nav-contents-culture {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    
+  }
+
+  .culture {
+    padding: 12px 14px;
+  }
+
+  .culture h4 {
+    font-size: 1rem;
+  }
+
+  .culture p {
+    font-size: 0.9rem;
+  }
+}

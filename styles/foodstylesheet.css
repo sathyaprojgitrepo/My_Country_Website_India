@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+  background-color:rgb(250, 230, 192);
+}
+
+/* Base: Mobile First */
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Clean, unified image rule */
+.food-item img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;         /* Fixed height for uniformity */
+  object-fit: cover;     /* Crop to maintain aspect */
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Food Title */
+.food-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top:1rem;
+  }
+
+
+.north-indian-food h2{
+    margin-top: 1.5rem;
+    color:rgb(6, 10, 129);  
+}
+
+.south-indian-food h2{
+    color:rgb(6, 10, 129);  
+}
+
+.east-indian-food h2{
+    color:rgb(6, 10, 129);  
+}
+
+.west-indian-food h2{
+    color:rgb(6, 10, 129);  
+}
+
+.north-indian-food p{
+    margin-top: 1.5rem;
+    color:rgb(6, 33, 107);
+    font-weight: 500; 
+}
+
+.south-indian-food p{
+    color:rgb(6, 10, 129); 
+    font-weight: 500; 
+}
+
+.east-indian-food p{
+    color:rgb(6, 10, 129); 
+    font-weight: 500; 
+}
+
+.west-indian-food p{
+    color:rgb(6, 10, 129);
+    font-weight: 500;  
+}
+
+.food-desc{
+    text-align: left;         
+  }
+
+/* Description */
+.food-item p {
+  font-size: 0.95rem;
+  color: #444444;
+  margin-top: 0.5rem;
+}
+
+/* Container for the list of cards */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Tablet and up: grid layout for cards */
+@media (min-width: 600px) {
+  section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .food-item {
+    margin: 1rem;
+    flex: 1 1 300px;
+  }
+}
+
+/* Desktop: larger cards */
+@media (min-width: 1024px) {
+  .food-item h4 {
+    font-size: 1.4rem;
+  }
+
+  .food-item p {
+    font-size: 1rem;
+  }
+
+  .food-item {
+    max-width: 340px;
+  }
+}

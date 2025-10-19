@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512"><svg id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #f79420;
+      }
+
+      .st0, .st1, .st2 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st3 {
+        fill: none;
+      }
+
+      .st2 {
+        fill: #009247;
+      }
+
+      .st4 {
+        fill: #2656a6;
+      }
+    </style>
+  </defs>
+  <rect class="st0" width="512" height="179.94"></rect>
+  <rect class="st1" x="0" y="179.94" width="512" height="179.94"></rect>
+  <rect class="st2" y="351.45" width="512" height="160.55"></rect>
+  <circle class="st4" cx="264.76" cy="265.7" r="85.76"></circle>
+  <circle class="st3" cx="265.52" cy="264.03" r="20.45"></circle>
+  <path class="st4" d="M-42.21,133.27v49.7-99.39,49.7Z"></path>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
